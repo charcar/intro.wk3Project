@@ -1,8 +1,4 @@
-describe('pingPong', function() {
-  it("is false for a non integer value", function() {
-    expect(pingPong("foobar")).to.equal("Input an integer, please");
-  });
-
+describe("pingPong", function() {
   it("is divisible by 15", function() {
     expect(pingPong(30)).to.equal("ping-pong");
   });
@@ -15,12 +11,11 @@ describe('pingPong', function() {
     expect(pingPong(6)).to.equal("ping");
   });
 
+  it("is an integer not divisible by 3, 5, or 15", function() {
+    expect(pingPong(7)).to.equal(7);
+  });
+});
+
   // it("is divisble by 5") function() {
   //   expect(pingPong(10).to.equal("pong"))
   // });
-
-
-
-
-
-  });
