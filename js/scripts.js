@@ -1,31 +1,37 @@
-var pingPong = function(i) {
-  if ((i) % 15 === 0) {
+var pingPong = function(input) {
+  if ((input) % 15 === 0) {
     return "ping-pong";
   }
 
-  else if ((i) % 5 === 0) {
+  else if ((input) % 5 === 0) {
     return "pong";
   }
 
-  else if ((i) % 3 === 0) {
+  else if ((input) % 3 === 0) {
     return "ping";
   }
 
-  else if (((i % 15) != 0) && ((i % 5) != 0) && ((i % 3) != 0)) {
-    return i;
+  else if (((input % 15) != 0) && ((input % 5) != 0) && ((input % 3) != 0)) {
+    return input;
   }
 
   };
+
 $(document).ready(function() {
-
+  $("form#submitField").submit(function(event) {
+  // initialize starting variable of 1
+  var i = 1;
   // set input from field to variable in js
-  var i = $("input#input").val();
+  var input = parseInt($("input#input").val());
   // while i > 0 run pingPong, then subtract 1 from i
-  while (i > 0) {
-    $("ul#result").append(pingPong(i));
-    var i = (i - 1);
+  while (i > 0 && i <= input) {
+    $("ul#result").append("<li>" + pingPong(i) + "</li>");
+    // console.log();
+    var i = (i + 1);
+    event.preventDefault();
+  }
+
+  });
 
 
-    }
-  event.preventDefault();
   });
