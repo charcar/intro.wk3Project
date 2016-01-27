@@ -15,7 +15,3 @@ describe("pingPong", function() {
     expect(pingPong(7)).to.equal(7);
   });
 });
-
-  // it("is divisble by 5") function() {
-  //   expect(pingPong(10).to.equal("pong"))
-  // });
