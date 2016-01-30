@@ -1,12 +1,15 @@
-# Pizza Place
-#### Place an order to the void
-### 1/29/2016
+# Ping Pong
+#### A game for all ages
+### 1/22/2016
 
 #### By Charles Carter
 
 ## Description
 
-This application accepts various forms of input and returns a price based on the selections made by the user. Toppings and larger sizes all cost extra. This will be updated as the author uses it as a playground for testing concepts they are learning.
+This application accepts an integer input and...
+* returns 'ping' if divisible by 3
+* returns 'pong' if divisible by 5
+* returns 'pingpong' if divisible by 15
 
 ## Technologies Used
 
