@@ -3,12 +3,16 @@
   <head>
     <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
-    <script src="css/styles.css"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
     <title>Ping-Pong</title>
   </head>
   <body>
     <div class = 'container'>
-      <h2>Welcome to the Ping Pong game</h2>
+      <div class="page-header">
+        <h1>Let's play ping-pong<small> || the most popular raquet sport in the world.</small></h1>
+      </div>
       <div>
         <p>The rules are as follows:</p>
         <p>Enter an integer into the box provided, and we will play some ping-pong!</p>
@@ -25,10 +29,10 @@
           </form>
         </div>
       </div>
-    </div>
       <div class = 'results'>
-        <p>Your results:<p>
+        <p><strong>Your results:</strong><p>
           <ul id='result'></ul>
       </div>
+    </div>
   </body>
 </html>
